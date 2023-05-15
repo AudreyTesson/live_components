@@ -15,4 +15,13 @@ class BlogController extends AbstractController
             'controller_name' => 'BlogController',
         ]);
     }
+
+    #[Route('/search', name: 'app_search')]
+    public function search(): Response
+    {
+        return $this->render('blog/search.html.twig', [
+            'controller_name' => 'BlogController',
+        ]);
+    }
+
 }
