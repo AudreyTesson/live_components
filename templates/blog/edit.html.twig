@@ -4,7 +4,6 @@
 
 {% block body %}
 
-    {{ component('count_blogpost') }}
-    {{ component('all_blogpost') }}
+    {{ component('edit_blogpost', { blogpost: blogpost }) }}
 
 {% endblock %}
